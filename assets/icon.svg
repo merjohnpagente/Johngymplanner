@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="120" fill="#0B1210"/>
+  <rect x="28" y="28" width="456" height="456" rx="100" fill="none" stroke="#1E2E28" stroke-width="6"/>
+  <!-- dumbbell bar -->
+  <rect x="120" y="242" width="272" height="28" rx="14" fill="#00FF66"/>
+  <!-- left plates -->
+  <rect x="88" y="176" width="36" height="160" rx="18" fill="#00FF66"/>
+  <rect x="136" y="200" width="30" height="112" rx="15" fill="#39FF14"/>
+  <rect x="176" y="218" width="26" height="76" rx="13" fill="#7CFF6B"/>
+  <!-- right plates -->
+  <rect x="388" y="176" width="36" height="160" rx="18" fill="#00FF66"/>
+  <rect x="346" y="200" width="30" height="112" rx="15" fill="#39FF14"/>
+  <rect x="310" y="218" width="26" height="76" rx="13" fill="#7CFF6B"/>
+  <!-- collars -->
+  <rect x="228" y="228" width="14" height="56" rx="7" fill="#0B1210"/>
+  <rect x="270" y="228" width="14" height="56" rx="7" fill="#0B1210"/>
+</svg>
