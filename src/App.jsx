@@ -62,6 +62,12 @@ function Logo({ size = 56 }) {
   );
 }
 
+function AppIcon({ size = 84, radius = 24 }) {
+  const [fail, setFail] = useState(false);
+  if (fail) return <Logo size={size} />;
+  return <img src="icon-512.png" width={size} height={size} style={{ borderRadius: radius, objectFit: 'cover' }} onError={() => setFail(true)} alt="Johns Fit Planner icon" />;
+}
+
 function instructionsFor(name) {
   return [
     `Set up for ${name} with a manageable load.`,
@@ -131,7 +137,7 @@ export default function App() {
   if (splash) {
     return (
       <div className="splash">
-        <Logo size={84} />
+        <AppIcon size={96} radius={26} />
         <h1>Johns<br /><span>Fit Planner</span></h1>
         <p>Plan &middot; Train &middot; Build &middot; Repeat</p>
         <small className="dev">Developed by MJDev</small>
@@ -143,7 +149,7 @@ export default function App() {
   if (!user) {
     return (
       <div className="auth">
-        <Logo size={64} />
+        <AppIcon size={72} radius={20} />
         <h1>Johns <span>Fit Planner</span></h1>
         <p className="muted">Your fitness journey starts here.</p>
         <div className="tabs">
@@ -167,7 +173,7 @@ export default function App() {
   return (
     <div className="app">
       <header>
-        <Logo size={36} />
+        <AppIcon size={36} radius={10} />
         <div className="brand"><b>Johns <span>Fit Planner</span></b></div>
         <button className="iconbtn" onClick={() => { setPage('Profile'); setShowSettings(false); }} aria-label="profile"><User size={18} /></button>
       </header>
